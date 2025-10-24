@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: dolce-arty-bot
+    env: node
+    buildCommand: npm install && pip install reportlab
+    startCommand: node bot.js
+    envVars:
+      - key: NODE_VERSION
+        value: 20

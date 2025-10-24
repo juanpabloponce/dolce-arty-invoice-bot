@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ['nodejs_20', 'python310', 'python310Packages.pip']
+
+[phases.install]
+cmds = [
+  'npm install',
+  'pip install reportlab --break-system-packages'
+]
+
+[start]
+cmd = 'node bot.js'

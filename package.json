@@ -1,0 +1,14 @@
+{
+  "name": "dolce-arty-whatsapp-bot",
+  "version": "1.0.0",
+  "description": "WhatsApp bot for Dolce Arty invoice generation",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.5.0",
+    "pino": "^8.16.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
