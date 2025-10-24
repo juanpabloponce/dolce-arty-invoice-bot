@@ -1,0 +1,10 @@
+[build]
+builder = "nixpacks"
+
+[build.nixpacksPlan]
+phases.setup.nixPkgs = ["nodejs_20", "python310", "python310Packages.pip"]
+phases.install.cmds = ["npm install", "pip3 install --break-system-packages reportlab"]
+
+[deploy]
+startCommand = "node bot.js"
+restartPolicyType = "always"
